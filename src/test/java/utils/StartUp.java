@@ -11,8 +11,12 @@ import java.util.TimeZone;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonParser;
@@ -26,6 +30,7 @@ public class StartUp {
 	  protected static WebDriver driver;
 	  protected static Map<String,Object> DataObj;
 	  String chromepath=System.getProperty("user.dir")+"/chromedriver";
+	  String firefoxpath=System.getProperty("user.dir")+"/geckodriver";
 	  String filepath=System.getProperty("user.dir")+"/src/main/java/dataRepository/";
 	  ObjectWriter writer;
 	  ObjectMapper mapper = new ObjectMapper();
@@ -33,32 +38,42 @@ public class StartUp {
 
 	  public StartUp()
 	  {
-		  System.out.println("Inside start up constructor");
-		  getDriver();
+		 // System.out.println("Inside start up constructor");
+		 // getDriver();
 		  	  
 	  }
 		
-	  protected WebDriver getDriver(){
+
+	  public WebDriver fetchDriver(String browser)
+	  {
+		  System.out.println("Inside fetch");
+		  switch(browser)
+		  {
+		  case "Chrome":
+			  if(driver==null){
+					 System.out.println("incongni");
+						System.setProperty("webdriver.chrome.driver",chromepath);
+						ChromeOptions options = new ChromeOptions();
+						DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+						options.addArguments("-incognito");
+						capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+						driver = new ChromeDriver(options);
+						driver.manage().window().maximize(); 
+				 }
+			  break;
+			  
+		  case "Firefox":
+			  if(driver==null)
+			  {
+				  System.setProperty("webdriver.gecko.driver",firefoxpath);
+				  driver = new FirefoxDriver();
+				  driver.manage().window().maximize();
+			  }
+			  break;
+		  }
 		  
-		 if(driver==null){
-			 System.out.println("incongni");
-				System.setProperty("webdriver.chrome.driver",chromepath);
-				ChromeOptions options = new ChromeOptions();
-				DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-				options.addArguments("-incognito");
-				options.addArguments("window-size=5000x5000");
-				//options.addArguments("headless");
-				options.addArguments("disable-gpu");
-				System.out.println("inside healdless startup");
-				capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-				driver = new ChromeDriver(options);
-				driver.manage().window().maximize(); 
-		 }
-		  
-			return driver;
- 
-			
-		}
+		  return driver;
+	  }
 
 	 
 
