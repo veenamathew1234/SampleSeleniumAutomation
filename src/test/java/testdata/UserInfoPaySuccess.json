@@ -1,0 +1,18 @@
+{
+	"Name":"Budi",
+	"Email":"budi@utomo.com",
+	"Phone no":"081808466410",
+	"City":"Jakarta",
+	"Address": "MidPlaza 2, 4th Floor Jl.Jend.Sudirman Kav.10-11",
+	"PostalCode" : "10220",
+	"CreditCardInfo":[
+		{
+		"CardNumber":"4811 1111 1111 1114",
+		"Expiry Date":"02/20",
+		"CVV" : "123",
+		"OTP":"112233"
+	}
+	
+	]
+	
+}

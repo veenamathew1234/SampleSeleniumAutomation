@@ -6,7 +6,7 @@
     <classes>
       <class name="testcases.TC_SuccessfulPayment">
         <methods>
-          <include name="launchWebsite"/>
+          <include name="buyProductAndVerifyIfShoppingCartDisplayed"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testcases.TC_SuccessfulPayment -->
@@ -17,7 +17,7 @@
     <classes>
       <class name="testcases.TC_SuccessfulPayment">
         <methods>
-          <include name="launchWebsite"/>
+          <include name="buyProductAndVerifyIfShoppingCartDisplayed"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testcases.TC_SuccessfulPayment -->

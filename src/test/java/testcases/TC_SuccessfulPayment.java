@@ -23,9 +23,15 @@ public class TC_SuccessfulPayment {
 	}
 
 	
-  @Test
+  @Test(priority=1)
   public void launchWebsite() {
 	  hm.launchPage();
 	  
   }
+  
+  @Test(priority=2)
+  public void buyProductAndVerifyIfShoppingCartDisplayed() {
+	  hm.clickOnBuyNow();
+  }
+  
 }
