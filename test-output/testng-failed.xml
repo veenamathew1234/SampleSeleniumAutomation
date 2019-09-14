@@ -6,7 +6,7 @@
     <classes>
       <class name="testcases.TC_SuccessfulPayment">
         <methods>
-          <include name="buyProductAndVerifyIfShoppingCartDisplayed"/>
+          <include name="verifyPaymentSuccess"/>
           <include name="setUp"/>
           <include name="loadJsonData"/>
         </methods>
