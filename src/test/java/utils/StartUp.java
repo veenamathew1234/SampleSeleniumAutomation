@@ -31,7 +31,7 @@ public class StartUp {
 	  protected static Map<String,Object> DataObj;
 	  String chromepath=System.getProperty("user.dir")+"/chromedriver";
 	  String firefoxpath=System.getProperty("user.dir")+"/geckodriver";
-	  String filepath=System.getProperty("user.dir")+"/src/main/java/dataRepository/";
+	  String filepath=System.getProperty("user.dir")+"/src/test/java/testdata/";
 	  ObjectWriter writer;
 	  ObjectMapper mapper = new ObjectMapper();
 	  String filename;
@@ -77,7 +77,7 @@ public class StartUp {
 
 	 
 
-	public Map<String,Object> beforeClass(String dataFileName)
+	public Map<String,Object> loadJsonData(String dataFileName)
 	{
 		
 		try 

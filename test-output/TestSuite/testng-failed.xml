@@ -8,19 +8,9 @@
         <methods>
           <include name="buyProductAndVerifyIfShoppingCartDisplayed"/>
           <include name="setUp"/>
+          <include name="loadJsonData"/>
         </methods>
       </class> <!-- testcases.TC_SuccessfulPayment -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
-  <test thread-count="2" name="FirefoxTest(failed)" parallel="tests">
-    <parameter name="browser" value="Firefox"/>
-    <classes>
-      <class name="testcases.TC_SuccessfulPayment">
-        <methods>
-          <include name="buyProductAndVerifyIfShoppingCartDisplayed"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- testcases.TC_SuccessfulPayment -->
-    </classes>
-  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

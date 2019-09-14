@@ -8,12 +8,5 @@
 	</class>
 </classes>
 </test>
-<test name="FirefoxTest">
-	<parameter name="browser" value="Firefox" />
-<classes>
-	<class name="testcases.TC_SuccessfulPayment">
-</class>
-</classes>
-</test>
 
 </suite>

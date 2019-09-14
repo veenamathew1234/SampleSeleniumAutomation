@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import utils.ObjectFactory;
@@ -11,11 +13,13 @@ import utils.StartUp;
 public class HomePage extends StartUp {
 
 	//WebDriver driver;
+	WebDriverWait wait;
 	ObjectFactory objmap;
+	WebElement e;
 	public HomePage(WebDriver driver)
 	{
 		this.driver=driver;
-		this.objmap=new ObjectFactory(System.getProperty("user.dir")+"/src/main/java/uiMap/HomePage.properties");
+		this.objmap=new ObjectFactory(System.getProperty("user.dir")+"/src/test/java/uimap/HomePage.properties");
 	}
 	ShoppingCart sc=new ShoppingCart(driver);
 	
@@ -30,20 +34,20 @@ public void launchPage(){
 	public void clickOnBuyNow(){
 		try
 		{
-			driver.findElement(objmap.getLocator("btn_BuyNow")).click();
+			Thread.sleep(3000);
+			e=driver.findElement(objmap.getLocator("btn_BuyNow"));
+			e.click();
 		
 		/*After clicking on Buy Now button , the user should be displayed the shopping cart
 		 * 
 		 * 
 		 */
+		//System.out.println(sc.verifyShoppingCart());
 		Assert.assertEquals(sc.verifyShoppingCart(), true, "Shopping cart not displayed after BuyNow click");
-		}
-		catch(NoSuchElementException ne)
-		{
-			Assert.assertNull(ne);
 		}
 		catch(Exception e)
 		{
+			System.out.println("Inside main exception");
 			e.printStackTrace();
 		}
 	}

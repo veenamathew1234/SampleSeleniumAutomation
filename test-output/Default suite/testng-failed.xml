@@ -6,6 +6,9 @@
       <class name="testcases.TC_SuccessfulPayment">
         <methods>
           <include name="launchWebsite"/>
+          <include name="buyProductAndVerifyIfShoppingCartDisplayed"/>
+          <include name="setUp"/>
+          <include name="enterShoppingCartDetails"/>
         </methods>
       </class> <!-- testcases.TC_SuccessfulPayment -->
     </classes>
