@@ -36,14 +36,6 @@ public class StartUp {
 	  ObjectMapper mapper = new ObjectMapper();
 	  String filename;
 
-	  public StartUp()
-	  {
-		 // System.out.println("Inside start up constructor");
-		 // getDriver();
-		  	  
-	  }
-		
-
 	  public WebDriver fetchDriver(String browser)
 	  {
 		  System.out.println("Inside fetch");

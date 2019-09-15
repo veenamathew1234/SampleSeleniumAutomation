@@ -23,32 +23,47 @@ public class HomePage extends StartUp {
 	}
 	ShoppingCart sc=new ShoppingCart(driver);
 	
-public void launchPage(){
+public boolean launchPage(){
 		
+	try
+	{
 		driver.get("https://demo.midtrans.com/");
 		String title=driver.getTitle();
 		Assert.assertEquals("Sample Store", title, "Title of the webpage loaded not matching. URL could be wrong!!");
+		return true;
+	}
+	catch(Exception e)
+	{
+		e.printStackTrace();
+		return false;
+	}
+	
 	}
 
-//Function to click on Buy Now button
-	public void clickOnBuyNow(){
+/*
+ * Purpose: Function to click on Buy Now button
+ */
+	public boolean clickOnBuyNow(){
 		try
 		{
-			Thread.sleep(3000);
+			//Thread.sleep(3000);
 			e=driver.findElement(objmap.getLocator("btn_BuyNow"));
 			e.click();
 		
-		/*After clicking on Buy Now button , the user should be displayed the shopping cart
-		 * 
-		 * 
-		 */
-		//System.out.println(sc.verifyShoppingCart());
+		//After clicking on Buy Now button , the user should be displayed the shopping cart
+		 
 		Assert.assertEquals(sc.verifyShoppingCart(), true, "Shopping cart not displayed after BuyNow click");
+		return true;
+		}
+		catch(NoSuchElementException ne)
+		{
+			Assert.assertNull(ne, "Could not locate Buy Now button in home page");
+			return false;
 		}
 		catch(Exception e)
 		{
-			System.out.println("Inside main exception");
 			e.printStackTrace();
+			return false;
 		}
 	}
 }

@@ -22,7 +22,7 @@ public class TC_SuccessfulPayment {
 	PaymentMethod pm=new PaymentMethod();
 	Map<String,Object> userdetails;
 	Map<String,Object> creditcarddetails;
-	
+	boolean result;
 	@BeforeClass
 	@Parameters("browser")
 	public void setUp(String browser)
@@ -40,42 +40,55 @@ public class TC_SuccessfulPayment {
 	
   @Test(priority=1)
   public void launchWebsite() {
-	  hm.launchPage();
+	  result=false;
+	  result=hm.launchPage();
+	  Assert.assertEquals(result, true, "Unable to launch website successfully");
 	  
   }
   
   @Test(priority=2)
   public void buyProductAndVerifyIfShoppingCartDisplayed() {
-	  hm.clickOnBuyNow();
+	  result=false;
+	  result=hm.clickOnBuyNow();
+	  Assert.assertEquals(result, true, "Buy Now /Verification of Shopping cart didnt happen");
   }
   
   @Test(priority=3)
   public void enterShoppingCartDetails()
-  {
-		  sc.enterShoppingCartDetails(userdetails);
+  {	
+	  result=false;
+	  result=sc.enterShoppingCartDetails(userdetails);
+	  Assert.assertEquals(result, true, "Error while entering shopping cart details");
   }
   
   @Test(priority=4)
   public void verifyOrderSummaryToContinue()
   {
-	  sc.verifyOrderSummaryPage();
+	  result=false;
+	  result=sc.verifyOrderSummaryPage();
+	  Assert.assertEquals(result, true, "Error in processing order Summary page (Clicking continue button)");
   }
   @Test(priority =5)
   public void choosePaymentMethod()
   {
-	  pm.chooseAPaymentMethod(userdetails);
+	  result=false;
+	  result=pm.chooseAPaymentMethod(userdetails);
+	  Assert.assertEquals(result, true, "Error in choosing Payment methos function");
   }
   @Test(priority =6)
   public void enterCreditCardDetails()
   {
+	  result=false;
 	  creditcarddetails=(Map<String, Object>) userdetails.get("CreditCardInfo");
-	  pm.enterCreditCardDetailsAndCompletePayment(creditcarddetails);
+	  result=pm.enterCreditCardDetailsAndCompletePayment(creditcarddetails);
+	  Assert.assertEquals(result, true, "Entering credit card details failed");
   }
   
   @Test(priority=7)
   public void verifyPaymentSuccess()
   {
-	  boolean result=pm.verifyPurchaseSuccess();
+	  result=false;
+	  result=pm.verifyPurchaseSuccess();
 	  Assert.assertEquals(result, true, "Successful payment message didnt get displayed");
   }
 }

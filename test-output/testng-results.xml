@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="24538" started-at="2019-09-14T18:49:11Z" finished-at="2019-09-14T18:49:36Z">
+  <suite name="TestSuite" duration-ms="23931" started-at="2019-09-15T05:47:52Z" finished-at="2019-09-15T05:48:16Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="24538" started-at="2019-09-14T18:49:11Z" finished-at="2019-09-14T18:49:36Z">
+    <test name="ChromeTest" duration-ms="23931" started-at="2019-09-15T05:47:52Z" finished-at="2019-09-15T05:48:16Z">
       <class name="testcases.TC_SuccessfulPayment">
-        <test-method status="PASS" signature="loadJsonData()[pri:0, instance:testcases.TC_SuccessfulPayment@11c20519]" name="loadJsonData" is-config="true" duration-ms="87" started-at="2019-09-14T18:49:11Z" finished-at="2019-09-14T18:49:11Z">
+        <test-method status="PASS" signature="loadJsonData()[pri:0, instance:testcases.TC_SuccessfulPayment@11c20519]" name="loadJsonData" is-config="true" duration-ms="50" started-at="2019-09-15T05:47:52Z" finished-at="2019-09-15T05:47:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadJsonData -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testcases.TC_SuccessfulPayment@11c20519]" name="setUp" is-config="true" duration-ms="1636" started-at="2019-09-14T18:49:11Z" finished-at="2019-09-14T18:49:13Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testcases.TC_SuccessfulPayment@11c20519]" name="setUp" is-config="true" duration-ms="1470" started-at="2019-09-15T05:47:52Z" finished-at="2019-09-15T05:47:54Z">
           <params>
             <param index="0">
               <value>
@@ -22,31 +22,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="launchWebsite()[pri:1, instance:testcases.TC_SuccessfulPayment@11c20519]" name="launchWebsite" duration-ms="1624" started-at="2019-09-14T18:49:13Z" finished-at="2019-09-14T18:49:14Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:1, instance:testcases.TC_SuccessfulPayment@11c20519]" name="launchWebsite" duration-ms="1226" started-at="2019-09-15T05:47:54Z" finished-at="2019-09-15T05:47:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="buyProductAndVerifyIfShoppingCartDisplayed()[pri:2, instance:testcases.TC_SuccessfulPayment@11c20519]" name="buyProductAndVerifyIfShoppingCartDisplayed" duration-ms="5140" started-at="2019-09-14T18:49:14Z" finished-at="2019-09-14T18:49:20Z">
+        <test-method status="PASS" signature="buyProductAndVerifyIfShoppingCartDisplayed()[pri:2, instance:testcases.TC_SuccessfulPayment@11c20519]" name="buyProductAndVerifyIfShoppingCartDisplayed" duration-ms="2898" started-at="2019-09-15T05:47:55Z" finished-at="2019-09-15T05:47:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buyProductAndVerifyIfShoppingCartDisplayed -->
-        <test-method status="PASS" signature="enterShoppingCartDetails()[pri:3, instance:testcases.TC_SuccessfulPayment@11c20519]" name="enterShoppingCartDetails" duration-ms="2638" started-at="2019-09-14T18:49:20Z" finished-at="2019-09-14T18:49:22Z">
+        <test-method status="PASS" signature="enterShoppingCartDetails()[pri:3, instance:testcases.TC_SuccessfulPayment@11c20519]" name="enterShoppingCartDetails" duration-ms="5288" started-at="2019-09-15T05:47:58Z" finished-at="2019-09-15T05:48:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterShoppingCartDetails -->
-        <test-method status="PASS" signature="verifyOrderSummaryToContinue()[pri:4, instance:testcases.TC_SuccessfulPayment@11c20519]" name="verifyOrderSummaryToContinue" duration-ms="2362" started-at="2019-09-14T18:49:22Z" finished-at="2019-09-14T18:49:25Z">
+        <test-method status="PASS" signature="verifyOrderSummaryToContinue()[pri:4, instance:testcases.TC_SuccessfulPayment@11c20519]" name="verifyOrderSummaryToContinue" duration-ms="1704" started-at="2019-09-15T05:48:03Z" finished-at="2019-09-15T05:48:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrderSummaryToContinue -->
-        <test-method status="PASS" signature="choosePaymentMethod()[pri:5, instance:testcases.TC_SuccessfulPayment@11c20519]" name="choosePaymentMethod" duration-ms="734" started-at="2019-09-14T18:49:25Z" finished-at="2019-09-14T18:49:25Z">
+        <test-method status="PASS" signature="choosePaymentMethod()[pri:5, instance:testcases.TC_SuccessfulPayment@11c20519]" name="choosePaymentMethod" duration-ms="596" started-at="2019-09-15T05:48:05Z" finished-at="2019-09-15T05:48:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- choosePaymentMethod -->
-        <test-method status="PASS" signature="enterCreditCardDetails()[pri:6, instance:testcases.TC_SuccessfulPayment@11c20519]" name="enterCreditCardDetails" duration-ms="4692" started-at="2019-09-14T18:49:25Z" finished-at="2019-09-14T18:49:30Z">
+        <test-method status="PASS" signature="enterCreditCardDetails()[pri:6, instance:testcases.TC_SuccessfulPayment@11c20519]" name="enterCreditCardDetails" duration-ms="5153" started-at="2019-09-15T05:48:06Z" finished-at="2019-09-15T05:48:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterCreditCardDetails -->
-        <test-method status="PASS" signature="verifyPaymentSuccess()[pri:7, instance:testcases.TC_SuccessfulPayment@11c20519]" name="verifyPaymentSuccess" duration-ms="5474" started-at="2019-09-14T18:49:30Z" finished-at="2019-09-14T18:49:35Z">
+        <test-method status="PASS" signature="verifyPaymentSuccess()[pri:7, instance:testcases.TC_SuccessfulPayment@11c20519]" name="verifyPaymentSuccess" duration-ms="5500" started-at="2019-09-15T05:48:11Z" finished-at="2019-09-15T05:48:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPaymentSuccess -->
