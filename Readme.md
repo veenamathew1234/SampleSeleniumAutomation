@@ -40,11 +40,11 @@ Below is the project structure
 How to run the project
 ------------------------
 
-I am attaching the entire project repository. You can export it to eclipse. Since its a maven project, there is no need to add an jar files manually. I have mentioned all of them in the dependencies
+I am attaching the entire project repository to the drive. I am sending link to the folder "Veena Mathew". I have placed the project folder "Gojek Assignment" under the folder "Veena Mathew" . "Gojek Assignment is the main project folder that you need to export to eclipse. Since its a maven project, there is no need to add an jar files manually. I have mentioned all of them in the dependencies
 
 Ways to run the project
 --------------
-
+Once you import the project to eclipse. You can choose anyone of the methods to run the project.
 1)Right click on the testng.xl and Run As TestNG Suit
 2)Running though Command line : go to the project location root in commandline and run the following command 
 	mvn clean install 
@@ -52,7 +52,7 @@ Ways to run the project
 
 Report
 ------
-The latest report of the run can be found under the folder test-output. Name of the report : emailable-report.html
+The latest report of the run can be found under the folder test-output. Name of the report : emailable-report.html. You can open the report using the option "Open with " Web Browser 
 
 Cross Browser Compatibility
 -----------------------
