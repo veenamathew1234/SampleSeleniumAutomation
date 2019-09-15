@@ -1,0 +1,17 @@
+{
+	"Name":"Sangeetha",
+	"Email":"sangeetha@utomo.com",
+	"PhoneNo":"981808466423",
+	"City":"Jakarta",
+	"Address": "Kunnathu Veedu 2, 4th Floor Trivandrum",
+	"PostalCode" : "10990",
+	"CreditCardInfo":
+		{
+		"CardNumber":"4911 1111 1111 1113",
+		"ExpiryDate":"02/20",
+		"CVV" : "123",
+		"OTP":"112233"
+	}
+	
+	
+}

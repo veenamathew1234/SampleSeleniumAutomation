@@ -123,5 +123,37 @@ public class PaymentMethod extends StartUp {
 			return false;
 		}
 	}
+	
+	/*
+	 * Purpose: To verify if transaction failed meesage gets displayed when user enters wrong credit card details
+	 */
+
+	public boolean verifyPurchaseFailure() {
+	
+		try
+		{
+		//Thread.sleep(2000);
+		WebDriverWait wait = new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.presenceOfElementLocated(objmap.getLocator("frame_FailedTransaction")));	
+		WebElement frame=driver.findElement(objmap.getLocator("frame_FailedTransaction"));
+		driver.switchTo().frame(frame);
+		if(driver.findElements(objmap.getLocator("lbl_TransactionFailed")).size()!=0)
+			return true;
+		else
+			return false;
+		}
+		catch(NoSuchElementException ne)
+		{
+			Assert.assertNull(ne, "Transaction Failed message not found");
+			return false;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			return false;
+			
+		}
+		
+	}
 
 }

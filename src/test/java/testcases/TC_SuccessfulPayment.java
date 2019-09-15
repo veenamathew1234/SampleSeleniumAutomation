@@ -32,6 +32,10 @@ public class TC_SuccessfulPayment {
 	}
 	
 	@BeforeClass
+	/*
+	 * Purpose : To load relevant test data for executing this Test Case. 
+	 * In this case- Successful credit payment scenario 
+	 */
 	public void loadJsonData()
 	{
 		userdetails=st.loadJsonData("UserInfoPaySuccess.json");
