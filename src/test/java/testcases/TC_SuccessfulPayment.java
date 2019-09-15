@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -95,4 +96,10 @@ public class TC_SuccessfulPayment {
 	  result=pm.verifyPurchaseSuccess();
 	  Assert.assertEquals(result, true, "Successful payment message didnt get displayed");
   }
+  
+//  @AfterClass
+//  public void closeDriver()
+//  {
+//	  driver.quit();
+//  }
 }

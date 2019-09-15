@@ -4,13 +4,13 @@
   <test thread-count="2" name="ChromeTest(failed)" parallel="tests">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testcases.TC_FailedPayment">
+      <class name="testcases.TC_SuccessfulPayment">
         <methods>
-          <include name="loadJsonData"/>
+          <include name="enterCreditCardDetails"/>
           <include name="setUp"/>
-          <include name="verifyPaymentFailure"/>
+          <include name="loadJsonData"/>
         </methods>
-      </class> <!-- testcases.TC_FailedPayment -->
+      </class> <!-- testcases.TC_SuccessfulPayment -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

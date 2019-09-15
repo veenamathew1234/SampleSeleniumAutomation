@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestSuite" thread-count="2" parallel="tests" >
+<suite name="TestSuite" thread-count="1" parallel="tests" >
 
-<test name="ChromeTest">
+<test name="PaymentSuccessfulTest">
 <parameter name="browser" value="Chrome" />
 <classes>
-	<class name="testcases.TC_FailedPayment">
+	<class name="testcases.TC_SuccessfulPayment">
 	</class>
+</classes>
+</test>
+
+<test name="PaymentFailureTest">
+	<parameter name="browser" value="Chrome" />
+<classes>
+	<class name="testcases.TC_FailedPayment">
+</class>
 </classes>
 </test>
 

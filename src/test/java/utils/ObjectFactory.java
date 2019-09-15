@@ -23,6 +23,13 @@ import org.openqa.selenium.By;
 	           System.out.println(e.getMessage());
 	      }
 	  }
+	  
+	  /*
+	   * Purpose: This function take input from .properties files from uimap. 
+	   * It splits the input which is in the form "xpath-->//" to locatorType  and locatorValue. 
+	   * The function  returns value of type By. 
+	   * This class enables the user to store any type of locator in the properties file.
+	   */
 
 	 public By getLocator(String ElementName) throws Exception 
 	 {

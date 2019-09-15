@@ -71,7 +71,8 @@ public class PaymentMethod extends StartUp {
 			driver.findElement(objmap.getLocator("txt_ExpiryDate")).sendKeys(expdate);
 			driver.findElement(objmap.getLocator("txt_CVV")).sendKeys(cvv);
 			driver.findElement(objmap.getLocator("btn_PayNow")).click();
-			Thread.sleep(2000);
+			WebDriverWait wait1 = new WebDriverWait(driver,30);
+			 wait1.until(ExpectedConditions.presenceOfElementLocated(objmap.getLocator("frame_OTP")));
 			
 			//Inorder to access OTP pop up, we needed to switch to the respective frame
 			

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="20799" started-at="2019-09-15T06:34:48Z" finished-at="2019-09-15T06:35:08Z">
+  <suite name="TestSuite" duration-ms="47817" started-at="2019-09-15T09:24:39Z" finished-at="2019-09-15T09:25:27Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="20799" started-at="2019-09-15T06:34:48Z" finished-at="2019-09-15T06:35:08Z">
-      <class name="testcases.TC_FailedPayment">
-        <test-method status="PASS" signature="loadJsonData()[pri:0, instance:testcases.TC_FailedPayment@11c20519]" name="loadJsonData" is-config="true" duration-ms="52" started-at="2019-09-15T06:34:48Z" finished-at="2019-09-15T06:34:48Z">
+    <test name="PaymentSuccessfulTest" duration-ms="30285" started-at="2019-09-15T09:24:39Z" finished-at="2019-09-15T09:25:09Z">
+      <class name="testcases.TC_SuccessfulPayment">
+        <test-method status="PASS" signature="loadJsonData()[pri:0, instance:testcases.TC_SuccessfulPayment@11c20519]" name="loadJsonData" is-config="true" duration-ms="55" started-at="2019-09-15T09:24:39Z" finished-at="2019-09-15T09:24:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadJsonData -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testcases.TC_FailedPayment@11c20519]" name="setUp" is-config="true" duration-ms="2381" started-at="2019-09-15T06:34:48Z" finished-at="2019-09-15T06:34:50Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testcases.TC_SuccessfulPayment@11c20519]" name="setUp" is-config="true" duration-ms="4739" started-at="2019-09-15T09:24:39Z" finished-at="2019-09-15T09:24:44Z">
           <params>
             <param index="0">
               <value>
@@ -22,35 +22,82 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="launchWebsite()[pri:1, instance:testcases.TC_FailedPayment@11c20519]" name="launchWebsite" duration-ms="2058" started-at="2019-09-15T06:34:50Z" finished-at="2019-09-15T06:34:52Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:1, instance:testcases.TC_SuccessfulPayment@11c20519]" name="launchWebsite" duration-ms="2917" started-at="2019-09-15T09:24:44Z" finished-at="2019-09-15T09:24:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="buyProductAndVerifyIfShoppingCartDisplayed()[pri:2, instance:testcases.TC_FailedPayment@11c20519]" name="buyProductAndVerifyIfShoppingCartDisplayed" duration-ms="2243" started-at="2019-09-15T06:34:52Z" finished-at="2019-09-15T06:34:54Z">
+        <test-method status="PASS" signature="buyProductAndVerifyIfShoppingCartDisplayed()[pri:2, instance:testcases.TC_SuccessfulPayment@11c20519]" name="buyProductAndVerifyIfShoppingCartDisplayed" duration-ms="2178" started-at="2019-09-15T09:24:47Z" finished-at="2019-09-15T09:24:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buyProductAndVerifyIfShoppingCartDisplayed -->
-        <test-method status="PASS" signature="enterShoppingCartDetails()[pri:3, instance:testcases.TC_FailedPayment@11c20519]" name="enterShoppingCartDetails" duration-ms="5775" started-at="2019-09-15T06:34:54Z" finished-at="2019-09-15T06:35:00Z">
+        <test-method status="PASS" signature="enterShoppingCartDetails()[pri:3, instance:testcases.TC_SuccessfulPayment@11c20519]" name="enterShoppingCartDetails" duration-ms="6745" started-at="2019-09-15T09:24:49Z" finished-at="2019-09-15T09:24:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterShoppingCartDetails -->
-        <test-method status="PASS" signature="verifyOrderSummaryToContinue()[pri:4, instance:testcases.TC_FailedPayment@11c20519]" name="verifyOrderSummaryToContinue" duration-ms="1799" started-at="2019-09-15T06:35:00Z" finished-at="2019-09-15T06:35:02Z">
+        <test-method status="PASS" signature="verifyOrderSummaryToContinue()[pri:4, instance:testcases.TC_SuccessfulPayment@11c20519]" name="verifyOrderSummaryToContinue" duration-ms="1769" started-at="2019-09-15T09:24:56Z" finished-at="2019-09-15T09:24:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrderSummaryToContinue -->
-        <test-method status="PASS" signature="choosePaymentMethod()[pri:5, instance:testcases.TC_FailedPayment@11c20519]" name="choosePaymentMethod" duration-ms="796" started-at="2019-09-15T06:35:02Z" finished-at="2019-09-15T06:35:03Z">
+        <test-method status="PASS" signature="choosePaymentMethod()[pri:5, instance:testcases.TC_SuccessfulPayment@11c20519]" name="choosePaymentMethod" duration-ms="610" started-at="2019-09-15T09:24:58Z" finished-at="2019-09-15T09:24:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- choosePaymentMethod -->
-        <test-method status="PASS" signature="enterCreditCardDetails()[pri:6, instance:testcases.TC_FailedPayment@11c20519]" name="enterCreditCardDetails" duration-ms="4967" started-at="2019-09-15T06:35:03Z" finished-at="2019-09-15T06:35:08Z">
+        <test-method status="PASS" signature="enterCreditCardDetails()[pri:6, instance:testcases.TC_SuccessfulPayment@11c20519]" name="enterCreditCardDetails" duration-ms="5528" started-at="2019-09-15T09:24:58Z" finished-at="2019-09-15T09:25:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterCreditCardDetails -->
-        <test-method status="PASS" signature="verifyPaymentFailure()[pri:7, instance:testcases.TC_FailedPayment@11c20519]" name="verifyPaymentFailure" duration-ms="681" started-at="2019-09-15T06:35:08Z" finished-at="2019-09-15T06:35:08Z">
+        <test-method status="PASS" signature="verifyPaymentSuccess()[pri:7, instance:testcases.TC_SuccessfulPayment@11c20519]" name="verifyPaymentSuccess" duration-ms="5604" started-at="2019-09-15T09:25:04Z" finished-at="2019-09-15T09:25:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentSuccess -->
+      </class> <!-- testcases.TC_SuccessfulPayment -->
+    </test> <!-- PaymentSuccessfulTest -->
+    <test name="PaymentFailureTest" duration-ms="17451" started-at="2019-09-15T09:25:09Z" finished-at="2019-09-15T09:25:27Z">
+      <class name="testcases.TC_FailedPayment">
+        <test-method status="PASS" signature="loadJsonData()[pri:0, instance:testcases.TC_FailedPayment@6166e06f]" name="loadJsonData" is-config="true" duration-ms="14" started-at="2019-09-15T09:25:09Z" finished-at="2019-09-15T09:25:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadJsonData -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testcases.TC_FailedPayment@6166e06f]" name="setUp" is-config="true" duration-ms="4" started-at="2019-09-15T09:25:09Z" finished-at="2019-09-15T09:25:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="launchWebsite()[pri:1, instance:testcases.TC_FailedPayment@6166e06f]" name="launchWebsite" duration-ms="1689" started-at="2019-09-15T09:25:09Z" finished-at="2019-09-15T09:25:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebsite -->
+        <test-method status="PASS" signature="buyProductAndVerifyIfShoppingCartDisplayed()[pri:2, instance:testcases.TC_FailedPayment@6166e06f]" name="buyProductAndVerifyIfShoppingCartDisplayed" duration-ms="2155" started-at="2019-09-15T09:25:11Z" finished-at="2019-09-15T09:25:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyProductAndVerifyIfShoppingCartDisplayed -->
+        <test-method status="PASS" signature="enterShoppingCartDetails()[pri:3, instance:testcases.TC_FailedPayment@6166e06f]" name="enterShoppingCartDetails" duration-ms="6196" started-at="2019-09-15T09:25:13Z" finished-at="2019-09-15T09:25:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterShoppingCartDetails -->
+        <test-method status="PASS" signature="verifyOrderSummaryToContinue()[pri:4, instance:testcases.TC_FailedPayment@6166e06f]" name="verifyOrderSummaryToContinue" duration-ms="1828" started-at="2019-09-15T09:25:20Z" finished-at="2019-09-15T09:25:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderSummaryToContinue -->
+        <test-method status="PASS" signature="choosePaymentMethod()[pri:5, instance:testcases.TC_FailedPayment@6166e06f]" name="choosePaymentMethod" duration-ms="611" started-at="2019-09-15T09:25:21Z" finished-at="2019-09-15T09:25:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- choosePaymentMethod -->
+        <test-method status="PASS" signature="enterCreditCardDetails()[pri:6, instance:testcases.TC_FailedPayment@6166e06f]" name="enterCreditCardDetails" duration-ms="3972" started-at="2019-09-15T09:25:22Z" finished-at="2019-09-15T09:25:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterCreditCardDetails -->
+        <test-method status="PASS" signature="verifyPaymentFailure()[pri:7, instance:testcases.TC_FailedPayment@6166e06f]" name="verifyPaymentFailure" duration-ms="941" started-at="2019-09-15T09:25:26Z" finished-at="2019-09-15T09:25:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPaymentFailure -->
       </class> <!-- testcases.TC_FailedPayment -->
-    </test> <!-- ChromeTest -->
+    </test> <!-- PaymentFailureTest -->
   </suite> <!-- TestSuite -->
 </testng-results>
